@@ -10,7 +10,7 @@ void loop() {
   
   int sensorValue = analogRead(POTENTIO);//pin à éventuellement changer
   
-  float voltage = sensorValue * (5.0 / 1023.0);
+  float voltage = sensorValue * (3.3 / 4096);
   
   Serial.println(voltage);
 }

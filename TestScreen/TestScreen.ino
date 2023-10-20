@@ -3,12 +3,16 @@
 void setup() {
   // put your setup code here, to run once:
 
-InitI2C();
-InitScreen();
+  InitI2C();
+  InitScreen();
 
-Display(motif);                           // affichage de l'image décrite dans le tabelau de donnée motif.h
-DisplayString(0,5,"APP ISEP");            // Ecriture sur la 5ème ligne 
-DisplayString(0,7,"groupe 10E");  // Ecriture sur la dernière ligne. 
+  const String dialog1 = "APP ISEP";
+  const String dialog2 = "Groupe E";
+
+  
+  //Display(motif);                           // affichage de l'image décrite dans le tabelau de donnée motif.h
+  DisplayString(0,5,dialog1);            // Ecriture sur la 5ème ligne 
+  DisplayString(0,7,dialog2);  // Ecriture sur la dernière ligne. 
 
 
 
